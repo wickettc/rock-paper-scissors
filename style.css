@@ -1,6 +1,13 @@
+body {
+    background-image: url(image1.jpg);
+    color: #fff2f2;
+}
+
 button {
     padding: 6px;
     font-size: 1.1em;
+    background: #424141;
+    color: white;
 }
 .container {
     text-align: center;

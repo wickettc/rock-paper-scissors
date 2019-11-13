@@ -6,7 +6,11 @@ function init() {
     computerScore = 0;
     gamePlaying = true;
     document.querySelector("#result").textContent = "Best of 5 Game"
+    document.querySelector("#playersScore").textContent = 0;
+    document.querySelector("#computerScore").textContent = 0;
+    document.querySelector("#round").textContent = 1;
 };
+
 
 function computerPlay() {
     var x = Math.floor(Math.random() * 3);
@@ -73,35 +77,8 @@ document.querySelector("#scissors").addEventListener("click", function(){
     playGame();
 });
 
+document.querySelector("#reset").addEventListener("click", init);
+
 
 init();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
